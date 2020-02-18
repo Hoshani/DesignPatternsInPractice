@@ -1,0 +1,17 @@
+using System;
+
+namespace Observer_Pattern.Interfaces
+{
+    public interface IObservable
+    {
+        void Add(IObserver observer);
+
+        void Remove(IObserver observer);
+
+        void Notify();
+
+        void GetState();
+
+        void SetState(int newState);
+    }
+}
